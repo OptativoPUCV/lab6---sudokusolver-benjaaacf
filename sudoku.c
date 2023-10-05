@@ -52,8 +52,13 @@ int is_valid(Node *n) {
 
       if (array[valor] == 1) {
         return 0;
+      } else {
+        if (valor != 0) {
+          array[valor] = 1;
+        }
       }
     }
+    
   }
 }
 
