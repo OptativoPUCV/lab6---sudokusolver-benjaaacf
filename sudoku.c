@@ -69,7 +69,13 @@ List *get_adj_nodes(Node *n) {
 
 int is_final(Node *n) { return 0; }
 
+Node *DFS(Node *initial, int *cont)
+{
+  return NULL;
+}
+
 /*Node *DFS(Node *initial, int *cont) {
+
   Stack *stack;
   stack = createStack();
   push(stack, initial);
@@ -94,10 +100,9 @@ int is_final(Node *n) { return 0; }
       *cont = *cont + 1;
     }
   }
-
   return NULL;
-}
-*/
+}*/
+
 
 /*
 int main( int argc, char *argv[] ){
