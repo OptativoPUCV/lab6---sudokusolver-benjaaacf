@@ -58,7 +58,9 @@ Node *DFS(Node *initial, int *cont) {
   *cont = 0;
   while (get_size(stack) != 0) {
     Node *nodo;
-    nodo = top(stack)
+    nodo = top(stack);
+    pop(stack);
+    *cont = 0;
   }
 }
 
