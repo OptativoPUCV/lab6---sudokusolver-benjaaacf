@@ -60,7 +60,7 @@ Node *DFS(Node *initial, int *cont) {
     Node *nodo;
     nodo = top(stack);
     pop(stack);
-    *cont = 0;
+    *cont = *cont - 1;
     if (is_final(nodo) == 10) {
       return NULL;
     }
