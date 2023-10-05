@@ -61,14 +61,14 @@ Node *DFS(Node *initial, int *cont) {
     nodo = top(stack);
     pop(stack);
     *cont = 0;
-    if (is_final(Node) == 10) {
+    if (is_final(nodo) == 10) {
       return NULL;
     }
-    if (is_final(Node) == 1) {
+    if (is_final(nodo) == 1) {
       return nodo;
     }
 
-    List *adj = get_adj_nodes(Node);
+    List *adj = get_adj_nodes(nodo);
     Node *copia = first(adj);
     while (copia != NULL) {
       push(stack, copia);
