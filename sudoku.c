@@ -58,7 +58,20 @@ int is_valid(Node *n) {
         }
       }
     }
-    
+    for (int i = 0; i < 9; i++) {
+      int *array = (int *)calloc(10, sizeof(int));
+
+      for (int j = 0; j < 9; j++) {
+        valor = n->sudo[i][j];
+        if (array[valor] == 1) {
+          return 0;
+        } else {
+          if (valor != 0) {
+            array[valor] = 1;
+          }
+        }
+      }
+    }
   }
 }
 
