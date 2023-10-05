@@ -81,7 +81,7 @@ int is_valid(Node *n) {
         int j = 3 * (k % 3) + (p % 3);
         valor = n->sudo[i][j];
 
-        if (valor != 0 || array[valor] == 1) {
+        if (valor != 0 && array[valor] == 1) {
           return 0;
         } else {
           if (valor != 0) {
