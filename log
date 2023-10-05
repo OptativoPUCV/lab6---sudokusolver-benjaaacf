@@ -2,3 +2,23 @@ Thu 05 Oct 2023 01:11:28 AM UTC:
  tests:  0|5
 total_score: 0/70
 7aad0a3
+Thu 05 Oct 2023 01:29:42 AM UTC: 
+ sudoku.c | 25 +++++++++++--------------
+ 1 file changed, 11 insertions(+), 14 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:61:22: error: expected ‘;’ before ‘}’ token
+   61 |     nodo = top(stack)
+      |                      ^
+      |                      ;
+   62 |   }
+      |   ~                   
+sudoku.c:60:11: error: variable ‘nodo’ set but not used [-Werror=unused-but-set-variable]
+   60 |     Node *nodo;
+      |           ^~~~
+sudoku.c:63:1: error: control reaches end of non-void function [-Werror=return-type]
+   63 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+cc4378d
