@@ -67,7 +67,17 @@ Node *DFS(Node *initial, int *cont) {
     if (is_final(Node) == 1) {
       return nodo;
     }
+
+    List *adj = get_adj_nodes(Node);
+    Node *copia = first(adj);
+    while (copia != NULL) {
+      push(stack, copia);
+      copia = next(adj);
+      *cont = *cont + 1;
+    }
   }
+
+  return NULL;
 }
 
 /*
