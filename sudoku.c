@@ -81,9 +81,9 @@ int is_final(Node *n) {
   }
   return 1;
 }
-Node *DFS(Node *initial, int *cont) { return NULL; }
+/*Node *DFS(Node *initial, int *cont) { return NULL; }*/
 
-/*Node *DFS(Node *initial, int *cont) {
+Node *DFS(Node *initial, int *cont) {
 
   Stack *stack;
   stack = createStack();
@@ -110,7 +110,7 @@ Node *DFS(Node *initial, int *cont) { return NULL; }
     }
   }
   return NULL;
-}*/
+}
 
 /*
 int main( int argc, char *argv[] ){
