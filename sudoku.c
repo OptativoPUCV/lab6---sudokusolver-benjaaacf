@@ -42,7 +42,20 @@ void print_node(Node *n) {
   printf("\n");
 }
 
-int is_valid(Node *n) { return 1; }
+int is_valid(Node *n) {
+  int valor;
+
+  for (int j = 0; j < 9; j++) {
+    int *array = (int *)calloc(10, sizeof(int));
+    for (int i = 0; 9 < 9; i++) {
+      valor = n->sudo[i][j];
+
+      if (array[valor] == 1) {
+        return 0;
+      }
+    }
+  }
+}
 
 List *get_adj_nodes(Node *n) {
   List *list = createList();
@@ -81,7 +94,6 @@ int is_final(Node *n) {
   }
   return 1;
 }
-/*Node *DFS(Node *initial, int *cont) { return NULL; }*/
 
 Node *DFS(Node *initial, int *cont) {
 
