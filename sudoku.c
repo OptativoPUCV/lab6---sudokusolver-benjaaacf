@@ -143,7 +143,7 @@ Node *DFS(Node *initial, int *cont) {
     Node *primerNodo = top(stack);
     pop(stack);
     if (is_final(primerNodo)) {
-      return NULL;
+      return primerNodo;
     }
 
     List *nodosAd = get_adj_nodes(primerNodo);
