@@ -47,7 +47,7 @@ int is_valid(Node *n) {
 
   for (int j = 0; j < 9; j++) {
     int *array = (int *)calloc(10, sizeof(int));
-    for (int i = 0; 9 < 9; i++) {
+    for (int i = 0; i < 9; i++) {
       valor = n->sudo[i][j];
 
       if (array[valor] == 1) {
